@@ -138,6 +138,7 @@ body {
 
 /*Content section start*/
 
+/*Promotions start*/
 .content-section {
   display: flex;
   flex-direction: column;
@@ -149,14 +150,13 @@ body {
   width: 1072px;
   height: 449px;
   gap: 11px;
- /* flex-wrap: wrap;*/
+  /* flex-wrap: wrap;*/
   max-width: 100vw;
 }
 .content-section .promotion-area > div {
   display: flex;
   flex-direction: column;
   width: 50%;
-  
 }
 .content-section .promotion-area img {
   width: 100%;
@@ -174,7 +174,7 @@ body {
   position: relative;
 }
 .content-section .right-area .promotion-container {
- height: 220px;
+  height: 220px;
 }
 
 .content-section .right-area {
@@ -186,8 +186,8 @@ body {
   height: 251.75px;
   margin-top: 44px;
   margin-left: 49px;
-      display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .content-section .left-area .promotion-content-left h3 {
   font-family: "Quattrocento";
@@ -230,31 +230,196 @@ body {
 .content-section .right-area .promotion-content {
   margin-top: 28.5px;
   margin-left: 32px;
-      display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-section .right-top-promotion-area h3 {
   font-family: "Barlow";
-font-weight: 600;
-font-size: 32px;
-line-height: 44.27px;
-letter-spacing: 0;
-margin: 0;
-color: white;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44.27px;
+  letter-spacing: 0;
+  margin: 0;
+  color: white;
 }
 .content-section .right-bottom-promotion-area h3 {
   font-family: "Barlow";
-font-weight: 600;
-font-size: 32px;
-line-height: 44.27px;
-letter-spacing: 0;
-margin: 0;
-color: black;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44.27px;
+  letter-spacing: 0;
+  margin: 0;
+  color: black;
 }
-.content-section .right-bottom-promotion-area  span{
-color: var(--kirmizi);
+.content-section .right-bottom-promotion-area span {
+  color: var(--kirmizi);
+}
+/*Promotions end*/
+/*content text start*/
+.content-text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 55px;
+  gap: 8px;
+}
+.content-text-area span {
+  font-family: "Satisfy";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44.27px;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--kirmizi);
+}
+.content-text-area h2 {
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 56.2px;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0;
+}
+.content-text-area br {
+  display: none;
 }
 
+/*content text end*/
+/*content options start*/
 
+.content-options-area {
+  display: flex;
+  justify-content: center;
+}
+
+.content-options-area ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 22.39px;
+  padding: 0;
+}
+.content-options-area li {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 50px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  background: white;
+
+  color: var(--koyu-gri);
+  align-items: center;
+}
+.content-options-area li.selected {
+  background: var(--koyu-gri);
+  color: white;
+}
+.content-options-area img {
+  width: 42px;
+  height: 42px;
+}
+.content-options-area span {
+  font-family: "Barlow";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32.4px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+/*content options end*/
+/*product area start*/
+
+.product-area {
+  margin: 0 auto;
+  width: 1068px;
+  height: 430px;
+  gap: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 25px;
+}
+.product-area .product {
+  background: white;
+  height: 419px;
+  border-radius: 12px;
+  
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  gap: 24px;
+}
+.product-area .product .product-frame {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 32px;
+}
+.product-area .product img {
+  max-width: 270.67px;
+}
+.product-area .product-text-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+.product-area .product-text-area .product-name {
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29.44px;
+  letter-spacing: 0;
+  margin: 0;
+}
+.product-area .product-detail-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.product-area .product-rating {
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28.8px;
+  letter-spacing: 0;
+  color: #1b1b1bb2;
+}
+.product-area .product-price-comment-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  align-content: center;
+}
+
+.product-area .product-price-comment-area .comment-count {
+  font-family: "Barlow";
+  font-weight: 600;
+  font-style: "SemiBold";
+  font-size: 16px;
+  line-height: 28.8px;
+  letter-spacing: 0;
+  color: #1b1b1bb2;
+}
+.product-area .product-price-comment-area .price {
+  font-family: "Barlow";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24.76px;
+  letter-spacing: 0;
+  text-align: right;
+  color: var(--koyu-gri);
+}
+/*product area end*/
 /*Content section end*/
