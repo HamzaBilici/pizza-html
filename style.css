@@ -4,7 +4,8 @@
   --koyu-gri: #292929;
   --kirmizi: #ce2829;
   --bej: #faf7f2;
-
+  --beyaz: #ffffff;
+  --siyah: #000000;
   min-height: 100vh;
 }
 
@@ -44,7 +45,7 @@ body {
   line-height: 50px;
   text-align: center;
   letter-spacing: 0;
-  color: white;
+  color: var(--beyaz);
 }
 .banner-text-area {
   width: 586.67px;
@@ -86,7 +87,7 @@ body {
   letter-spacing: 1.5px;
   text-align: center;
   margin: 0;
-  color: white;
+  color: var(--beyaz);
 }
 .banner-text-area .banner-text span {
   width: 324px;
@@ -103,7 +104,7 @@ body {
 
 .main-banner-options {
   height: 94px;
-  background: #ffffff;
+  background: var(--beyaz);
   display: flex;
   align-items: center;
   max-width: 1920px;
@@ -115,7 +116,8 @@ body {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  width: 1068px;
+  max-width: 1068px;
+    width: 100%;
   justify-content: space-between;
 }
 .main-banner-options li {
@@ -197,7 +199,7 @@ body {
   letter-spacing: 0;
   text-align: center;
   margin: 0;
-  color: white;
+  color: var(--beyaz);
 }
 .content-section .left-area .promotion-content-left p {
   font-family: "Barlow";
@@ -208,7 +210,7 @@ body {
   margin: 5px 0;
   width: 275px;
   height: 27px;
-  color: white;
+  color: var(--beyaz);
 }
 
 .content-section .order-button {
@@ -219,7 +221,7 @@ body {
   letter-spacing: 0;
   text-align: center;
   color: var(--kirmizi);
-  background: white;
+  background: var(--beyaz);
   text-decoration: none;
   margin-top: 20px;
   width: 138px;
@@ -241,7 +243,7 @@ body {
   line-height: 44.27px;
   letter-spacing: 0;
   margin: 0;
-  color: white;
+  color: var(--beyaz);
 }
 .content-section .right-bottom-promotion-area h3 {
   font-family: "Barlow";
@@ -250,7 +252,7 @@ body {
   line-height: 44.27px;
   letter-spacing: 0;
   margin: 0;
-  color: black;
+  color: var(--siyah);
 }
 .content-section .right-bottom-promotion-area span {
   color: var(--kirmizi);
@@ -292,6 +294,9 @@ body {
 .content-options-area {
   display: flex;
   justify-content: center;
+      max-width: 1068px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .content-options-area ul {
@@ -301,6 +306,9 @@ body {
   list-style-type: none;
   gap: 22.39px;
   padding: 0;
+
+  max-width: 1068px;
+    width: 100%;
 }
 .content-options-area li {
   display: flex;
@@ -311,14 +319,14 @@ body {
   padding-right: 20px;
   padding-bottom: 12px;
   padding-left: 20px;
-  background: white;
+  background: var(--beyaz);
 
   color: var(--koyu-gri);
   align-items: center;
 }
 .content-options-area li.selected {
   background: var(--koyu-gri);
-  color: white;
+  color: var(--beyaz);
 }
 .content-options-area img {
   width: 42px;
@@ -338,7 +346,7 @@ body {
 
 .product-area {
   margin: 0 auto;
-  width: 1068px;
+  max-width: 1068px;
   height: 430px;
   gap: 32px;
   display: flex;
@@ -347,10 +355,10 @@ body {
   margin-top: 25px;
 }
 .product-area .product {
-  background: white;
+  background: var(--beyaz);
   height: 419px;
   border-radius: 12px;
-  
+
   display: flex;
   flex-direction: column;
 
@@ -366,7 +374,8 @@ body {
   margin: 32px;
 }
 .product-area .product img {
-  max-width: 270.67px;
+     max-width: 270.67px;
+    width: 100%;
 }
 .product-area .product-text-area {
   display: flex;
@@ -423,3 +432,155 @@ body {
 }
 /*product area end*/
 /*Content section end*/
+
+/*footer start*/
+footer {
+  background: #1a1a1a;
+  color: var(--beyaz);
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+footer .footer-top {
+  max-width: 1066px;
+  justify-content: space-between;
+  margin: 58px auto;
+  margin-bottom: 23px;
+  display: flex;
+  flex-direction: row;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer .footer-left {
+  display: flex;
+  gap: 51px;
+}
+
+footer .footer-left h2 {
+  font-family: "Londrina Solid";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  text-transform: capitalize;
+  margin: 0;
+  margin-bottom: 40.5px;
+}
+footer .footer-contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin: 0;
+  max-width: 306px;
+}
+footer .footer-contact li {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32.4px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  display: flex;
+}
+footer .footer-contact li img {
+  width: 28px;
+  height: 28px;
+  margin-right: 13px;
+}
+footer .footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 28.09px;
+  justify-content: end;
+  margin-bottom: 22.02px;
+}
+footer .footer-menu h3 {
+  font-family: "Barlow";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32.11px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  margin: 0;
+}
+footer .footer-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7.39px;
+  padding-top: 2px;
+  padding-bottom: 5.39px;
+  margin: 0;
+}
+footer .footer-menu li {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32.4px;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+footer .footer-right {
+  display: flex;
+  flex-direction: column;
+  height: 332px;
+  gap: 40px;
+  margin: 29.18px 0;
+  justify-content: end;
+}
+footer .footer-right h4 {
+  font-family: "Barlow";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32.11px;
+  letter-spacing: 0;
+  vertical-align: middle;
+
+  margin: 0;
+}
+footer .footer-right ul {
+  display: flex;
+  width: 347px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15.5px;
+  row-gap: 10.5px;
+  margin: 0;
+}
+footer .footer-right li {
+  width: 105px;
+  height: 105px;
+}
+footer .footer-right li img {
+  width: 100%;
+}
+
+footer .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+footer .footer-bottom .footer-bottom-frame {
+  max-width: 1068px;
+  display: flex;
+  flex-direction: row;
+  margin: 32px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-bottom img {
+  width: 18px;
+  height: 18px;
+  filter: invert(100%);
+}
+footer .footer-bottom span {
+  font-family: "Barlow", regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28.8px;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+/*footer end*/
