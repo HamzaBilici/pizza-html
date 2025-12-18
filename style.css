@@ -589,6 +589,29 @@ footer .footer-bottom span {
 }
 /*footer end*/
 @media (max-width: 1023px) {
+.banner-header{
+  margin-top: 126px;
+  margin-bottom: 40px;
+}
+  .banner-text-area{
+    width: unset;
+    height: unset;
+  }
+  .banner-text-area .banner-text {
+    width: unset;
+    height: unset;
+}
+  .banner-text-area .banner-text p{
+    width: min-content;
+    height: unset;
+}
+  .banner-text-area .banner-text span{
+   display: none;
+}
+.banner-text-area a {
+
+    margin-top: 41px;
+}
   .main-banner .image-area {
     height: 100vh;
   }
